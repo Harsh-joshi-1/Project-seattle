@@ -125,6 +125,7 @@ const defaultDevOrigins = [
 const allowedOrigins = [
   ...(process.env.NODE_ENV === 'production' ? [] : defaultDevOrigins),
   ...envOrigins,
+  'https://havenhomespunjab.in',
 ];
 
 const uniqueAllowedOrigins = [...new Set(allowedOrigins)];
